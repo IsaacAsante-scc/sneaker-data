@@ -1,7 +1,18 @@
 <?php
 
+function sneakerdata_theme_support(){
+
+    // Adds dynamic title tag support(WordPress manage title tag itself)
+    add_theme_support('title-tag');
+      
+}
+
+add_action('after_theme_setup', 'sneakerdata_theme_support');
+
+
+
 function sneakerdata_register_styles(){
-    // version variable to get version number paramerter(dynamic parameter) from style.css
+    // Version variable to get version number paramerter(dynamic parameter) from style.css
     $version = wp_get_theme()->get('Version');
 
     wp_enqueue_style( 'sneakerdata-style', get_template_directory_uri() . "/style.css", array('sneakerdata-bootstrap'), $version, 'all');
