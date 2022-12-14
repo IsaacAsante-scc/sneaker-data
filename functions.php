@@ -11,6 +11,19 @@ add_action('after_theme_setup', 'sneakerdata_theme_support');
 
 
 
+function sneakerdata_menus(){
+
+    $locations = array(
+        'primary' => "Desktop Primary Left Sidebar",
+        'footer' => "Footer Menu Items"
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init', 'sneakerdata_menus');
+
+
 function sneakerdata_register_styles(){
     // Version variable to get version number paramerter(dynamic parameter) from style.css
     $version = wp_get_theme()->get('Version');
