@@ -2,9 +2,9 @@
 
 function sneakerdata_theme_support(){
 
-    // Adds dynamic title tag support(WordPress manage title tag itself)
-    add_theme_support('title-tag');
-      
+    // Adds dynamic title tag support(WordPress manage title tag itself
+    add_theme_support( 'title-tag' );
+    add_theme_support( 'custom-logo' );      
 }
 
 add_action('after_theme_setup', 'sneakerdata_theme_support');
@@ -50,4 +50,18 @@ function sneakerdata_register_scripts(){
     
     add_action( 'wp_enqueue_scripts', 'sneakerdata_register_scripts');
     
+
+    function themename_custom_logo_setup() {
+        $defaults = array(
+            'height'               => 100,
+            'width'                => 400,
+            'flex-height'          => true,
+            'flex-width'           => true,
+            'header-text'          => array( 'site-title', 'site-description' ),
+            'unlink-homepage-logo' => true, 
+        );
+        add_theme_support( 'custom-logo', $defaults );
+    }
+    add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
 ?>
