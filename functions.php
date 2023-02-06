@@ -69,7 +69,7 @@ function sneakerdata_register_scripts(){
 
 
     add_theme_support( 'post-thumbnails');
-    set_post_thumbnail_size( 50, 50 ); 
+    // set_post_thumbnail_size( 50, 50 ); 
 
 ?>
 
