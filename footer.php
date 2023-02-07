@@ -1,6 +1,6 @@
 <footer class="footer text-center py-2 theme-bg-dark">
 		   
-            <p class="copyright"><a href="isaacka.xyz">Isaac Asante</a></p>
+            <p class="copyright"><a href="isaacka.xyz">Sneaker Data</a></p>
             <?php
                 dynamic_sidebar('footer-1');
             ?>
