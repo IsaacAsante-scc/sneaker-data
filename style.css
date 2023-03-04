@@ -22,7 +22,7 @@ Author URL: www.isaacka.xyz
     --white: #fff;
     --gray: #767575;
     --gray-dark: #434242;
-    --primary: #6f42c1;
+    --primary: #87A3A3;
     --secondary: #4f4f4f;
     --success: #28a745;
     --info: #17a2b8;
@@ -60,7 +60,7 @@ body {
     overflow-x: hidden
 }
 a{
-    color: var(--pink);
+    color: var(--info);
 }
 h1,
 h2,
@@ -110,11 +110,11 @@ h6 {
     top: 0;
     height: 100vh;
     width: var(--sidebar-width);
-    background: var(--primary);
-    color: #fff
+    background: var(--light);
+    color: var(--dark)
 }
 .header .site-title {
-    color:var(--white);
+    color:var(--dark);
     font-size:1.2em;
     display:block;
 }
@@ -163,12 +163,12 @@ h6 {
 }
 
 .header .nav-item a {
-    color: rgba(255, 255, 255, 0.8)
+    color: rgba(30, 30, 30, 0.8)
 }
 
 .header .nav-item a:hover {
     text-decoration: underline;
-    color: rgba(0, 0, 0, 0.6)
+    color: var(--blue)
 }
 .logo{
     width:78px;
@@ -209,7 +209,7 @@ h6 {
 .page-title .heading {
     font-size: 2rem;
     font-weight: bold;
-    color:white;
+    color: rgba(30, 30, 30, 0.8)
 }
 
 .footer {
@@ -219,9 +219,12 @@ h6 {
 .footer a {
     color: #fff
 }
+
+/* Gradient For Header */
+
 .gradient{
     background: rgb(43,43,43);
-    background: linear-gradient(151deg, var(--orange) 0%, var(--pink) 35%,var(--primary) 100%) !important;
+    background: linear-gradient(125deg, var(--light) 15%, var(--lightgray) 35%,var(--light) 100%) !important;
 }
 .content .post .title {
     font-size: 1.275rem
@@ -277,7 +280,7 @@ h6 {
 }
 
 .blog-nav a {
-    background: var(--primary);
+    background: var(--light);
     color: #fff;
     font-size: 1rem;
     padding: 1rem;
