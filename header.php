@@ -76,7 +76,7 @@
 			<h1 class="heading">
                 <?php
                     // WordPress function to dynamically get blog title
-                    the_title();
+                    single_post_title('<h1 class="page-title">', '</h1>');
                 ?>
             </h1>
 		</header>
